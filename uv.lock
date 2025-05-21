@@ -1,0 +1,22 @@
+version = 1
+revision = 2
+requires-python = ">=3.10"
+
+[[package]]
+name = "fsbridge"
+source = { editable = "." }
+dependencies = [
+    { name = "fsspec" },
+]
+
+[package.metadata]
+requires-dist = [{ name = "fsspec", specifier = ">=2023.0.0" }]
+
+[[package]]
+name = "fsspec"
+version = "2025.5.0"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/f2/77/deb99b97981e2e191913454da82d406702405178631c31cd623caebaf1b1/fsspec-2025.5.0.tar.gz", hash = "sha256:e4f4623bb6221f7407fd695cc535d1f857a077eb247580f4ada34f5dc25fd5c8", size = 300989, upload-time = "2025-05-20T15:46:22.484Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/2c/a9/a7022f58e081149ec0184c31ea81dcee605e1d46380b48122e1ef94ac24e/fsspec-2025.5.0-py3-none-any.whl", hash = "sha256:0ca253eca6b5333d8a2b8bd98c7326fe821f1f0fdbd34e1b445bddde8e804c95", size = 196164, upload-time = "2025-05-20T15:46:20.89Z" },
+]
