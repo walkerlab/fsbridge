@@ -1,5 +1,6 @@
 # fsbridge
 
+
 A pragmatic monkey-patching library that transparently redirects Python's standard file operations to FSSpec backends, allowing existing code to work with any filesystem without modification.
 
 [![PyPI version](https://badge.fury.io/py/fsbridge.svg)](https://badge.fury.io/py/fsbridge)
@@ -148,9 +149,3 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 ## License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
-
-## Acknowledgments
-
-- [FSSpec](https://filesystem-spec.readthedocs.io/) for providing the filesystem abstraction
-- [PyFilesystem2](https://docs.pyfilesystem.org/) for inspiration
-- [pyfakefs](https://github.com/jmcgeheeiv/pyfakefs) for demonstrating effective file operation monkey-patching

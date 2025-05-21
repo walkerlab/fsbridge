@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=45", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+
+[project]
+name = "fsbridge"
+dynamic = ["version", "dependencies"]
+description = "A pragmatic library that transparently redirects Python's standard file operations to FSSpec backends through monkey-patching, enabling existing code to work with any filesystem without modification."
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [
+    {name = "Walker Lab", email = "eywalker@uw.edu"}
+]
+
+[tool.setuptools_scm]
+write_to = "src/fsbridge/_version.py"
+
+[tool.setuptools.dynamic]
+dependencies = {file = ["requirements.txt"]}
